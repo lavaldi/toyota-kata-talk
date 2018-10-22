@@ -110,6 +110,3 @@ typings/
 
 # Serverless directories
 .serverless
-
-# others
-dist
