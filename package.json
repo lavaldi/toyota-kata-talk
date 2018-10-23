@@ -9,7 +9,8 @@
     "build": "npm run build:site && npm run build:pdf",
     "build:site": "mdx-deck build deck.mdx",
     "build:pdf": "mdx-deck -p 1234 pdf deck.mdx",
-    "postbuild": "cpy --parents \"images/**\" ./dist"
+    "postbuild": "cpy --parents \"images/**\" ./dist",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@rebass/grid": "^6.0.0-4",
     "cpy-cli": "^2.0.0",
+    "gh-pages": "^2.0.1",
     "mdx-deck": "^1.7.7",
     "rimraf": "^2.6.2"
   }
